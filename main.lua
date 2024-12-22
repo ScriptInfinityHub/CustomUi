@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 
 -- ฟังก์ชันโหลดไฟล์จาก GitHub
 local function LoadFile(FileName)
-    local Url = "https://raw.githubusercontent.com/ScriptInfinityHub/CustomUi/main/src/" .. FileName
+    local Url = "https://raw.githubusercontent.com/ScriptInfinityHub/CustomUi/" .. FileName
     local Success, Response = pcall(function()
         return game:HttpGet(Url)
     end)
